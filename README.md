@@ -12,4 +12,4 @@ I hope you enjoy the tool!***
 **How to install :**
 - sudo git clone https://github.com/wakedxy/weban.git
 - sudo chmod +x weban.py  
-- sudo chmod +x **__init__/dirsearch/dirsearch.py**
+- sudo chmod +x \__init__\/dirsearch/dirsearch.py
