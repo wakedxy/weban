@@ -7,8 +7,14 @@ import get_ip as ad
 import file_mg as file 
 from art import *
 from termcolor import colored
+from sys import platform
 
-SEC_PATH = "/usr/bin/"
+if platform == "linux":
+	global SEC_PATH
+	SEC_PATH ="/usr/bin/"
+else:
+	global SEC_PATH
+	SEC_PATH = ""
 
 def main():
 	try
