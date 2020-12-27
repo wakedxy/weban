@@ -8,7 +8,7 @@ import file_mg as file
 from art import *
 from termcolor import colored
 
-SEC_PATH = "usr/bin/"
+SEC_PATH = "/usr/bin/"
 
 def main():
 	try
