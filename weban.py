@@ -1,23 +1,19 @@
 #!/usr/bin/python3
 
 import os
-import sys 
+import sys
 sys.path.append('__init__')
 import get_ip as ad
 import file_mg as file 
 from art import *
 from termcolor import colored
-from sys import platform
 
-if platform == "linux":
-	global SEC_PATH
-	SEC_PATH ="/usr/bin/"
-else:
-	global SEC_PATH
-	SEC_PATH = ""
+SEC_PATH = "/usr/bin/"
+
+
 
 def main():
-	try
+	try:	
 		url =input("Please enter the URL : ")
 		path_dir ="reports/" + url
 		file.create_dir(path_dir)
@@ -30,15 +26,15 @@ def main():
 		print(e)
 	except:
 		print("unknow error")
-
+	
+	
 
 
 if __name__ == '__main__':
+
 	print(colored(text2art ("Weban"),'cyan'))
 	print(colored('Created by Waked XY\n\n'.center(60),'red'))
-	
 	if sys.version_info.major < 3 :
 		print("python version may be > major 3" )
 		exit(0)
-	
 	main()
